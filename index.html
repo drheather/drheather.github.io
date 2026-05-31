@@ -1,16 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dr. Heather</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laney Learns by Dr. Heather</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fffaf3;
+      color: #3d342f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f3e7dc;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #6b4e71;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #3d342f;
+      font-size: 1rem;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(180deg, #fffaf3, #f8eee8);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 12px;
+      color: #6b4e71;
+    }
+
+    .hero p {
+      font-size: 1.35rem;
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #8f6f95;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #6b4e71;
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(80, 60, 50, 0.08);
+    }
+
+    .featured {
+      background: #f3e7dc;
+      border-radius: 28px;
+      padding: 40px;
+    }
+
+    .small-label {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      color: #8f6f95;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 8%;
+      background: #eadbd0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px 0 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Dr. Heather</h1>
-  <p>Helping families grow together with wisdom, warmth, and wonder.</p>
 
-  <h2>Laney Learns</h2>
-  <p>Books, songs, and caregiver tools for connection, emotional growth, and joyful learning.</p>
+  <header>
+    <div class="logo">Laney Learns</div>
+    <nav>
+      <a href="#books">Books</a>
+      <a href="#grownups">For Grown-Ups</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Wonder Hour</h2>
-  <p>Story, music, mindfulness, and movement for children and caregivers.</p>
+  <main>
+
+    <section class="hero">
+      <h1>Laney Learns</h1>
+      <p>Stories, songs, and mindful moments for little ones and their grownups.</p>
+      <p>Developmentally grounded books and caregiver resources that help families grow through connection, rhythm, play, and love.</p>
+      <a class="button" href="#contact">Join the Mailing List</a>
+    </section>
+
+    <section id="books">
+      <p class="small-label">Coming Soon</p>
+      <div class="featured">
+        <h2>Laney Learns to Love</h2>
+        <p>
+          A tender picture book about how love grows through presence, connection,
+          and everyday moments between a baby and her caregivers.
+        </p>
+        <p>
+          Written for little ones ages 0–5 and the grown-ups who love them,
+          <em>Laney Learns to Love</em> blends lyrical storytelling with developmental wisdom.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>About the Series</h2>
+      <p>
+        The <em>Laney Learns</em> series helps children and caregivers grow together
+        through stories rooted in attachment, emotional development, music, movement,
+        and mindful connection.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Stories</h3>
+          <p>Warm, lyrical books that support emotional growth and everyday connection.</p>
+        </div>
+
+        <div class="card">
+          <h3>Songs</h3>
+          <p>Gentle lullabies and playful music to extend each story into family life.</p>
+        </div>
+
+        <div class="card">
+          <h3>Caregiver Tools</h3>
+          <p>Reflection prompts, connection tips, and practical supports for grown-ups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="grownups">
+      <h2>For Grown-Ups</h2>
+      <p>
+        Laney Learns is created not only for children, but also for the adults holding,
+        guiding, soothing, and growing alongside them.
+      </p>
+      <p>
+        Each resource is designed to offer warmth, reassurance, and practical insight
+        for real-life caregiving—not perfection.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Dr. Heather</h2>
+      <p>
+        Dr. Heather Mangelsdorf is a developmental psychologist, educator, musician,
+        author, and parent. Through Laney Learns, she creates story-rich resources
+        that help families grow together with wisdom, warmth, and wonder.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Stay Connected</h2>
+      <p>
+        Want updates about new books, songs, caregiver resources, and launch news?
+      </p>
+      <p>
+        Email: <a href="mailto:heather@drheather.org">heather@drheather.org</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Laney Learns by Dr. Heather</p>
+    <p>© 2026 Dr. Heather, LLC. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
